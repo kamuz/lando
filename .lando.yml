@@ -1,0 +1,12 @@
+name: sitename
+recipe: lamp
+config:
+  webroot: .
+proxy:
+  mailhog:
+    - mail.sitename.lndo.site
+services:
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
